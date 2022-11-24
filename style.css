@@ -31,9 +31,7 @@ form,h1,div,input,button,span,#output{
     padding: 5px;
 
 }
-#output{
-    text-align: center;
-}
+
 input{
     padding: 5px;
     border-radius: 15px;   
