@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestedloop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Nested loop es6</h1>
+    <hr>
+   
+  
+    <div class="inner-box">
+        <span id="array1">
+        
+            [2, 3, 1],
+            
+            [4, 2, 1],
+            
+            [5, 3, 0],
+            
+            
+        </span>
+        <br>
+        <span id="array2">
+            [4, 5, 2],
+            
+            [8, 6, 1],
+            
+            [0, 3, 7]
+    
+        </span>
+        
+        <form onclick="Add(); return false">
+            <button>Add</button>
+            <h2 id="result"></h2>
+
+        </form>
+        <form onclick="Clear(); return false">
+            <button>Clear</button>
+
+        </form>
+    
+      
+    </div>
+  
+
+
+    <script>
+
+        let matrix = [
+            [2, 3, 1],
+            [4, 2, 1],
+            [5, 3, 0],
+        ]
+        let matrix1 = [
+            [4, 5, 2],
+            [8, 6, 1],
+            [0, 3, 7]
+        ]
+        let sum = []
+        function clear(){
+            return;
+        }
+        function Add() {
+            for (let i = 0; i < matrix.length; i++) {
+                 console.log(i,"i")
+
+                for (let c = 0; c < matrix1[i].length; c++){
+                   
+                    document.querySelector("#result").innerHTML 
+                    += matrix1[i][c] + matrix[i][c]
+                    document.querySelector("#result").innerHTML += "<br />"
+                    console.log(c,"c")
+                    
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
